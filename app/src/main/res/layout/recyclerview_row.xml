@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:cardCornerRadius="05dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="05dp"
+        android:layout_marginBottom="05dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ctLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#cfd8dc">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ctIctLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintStart_toStartOf="@id/ctLayout"
+                app:layout_constraintTop_toTopOf="@id/ctLayout"
+                app:layout_constraintEnd_toEndOf="@id/ctLayout"
+                app:layout_constraintBottom_toBottomOf="@id/ctLayout"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="48dp"
+                >
+
+
+          <!--  <view
+                android:id="@+id/viewLeft"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/ctLayout"
+                app:layout_constraintStart_toStartOf="@id/ctLayout"
+                app:layout_constraintTop_toTopOf="@id/ctLayout" />
+
+            <view
+                android:id="@+id/viewRight"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/ctLayout"
+                app:layout_constraintEnd_toEndOf="@id/ctLayout"
+                app:layout_constraintTop_toTopOf="@id/ctLayout" /> !-->
+
+
+            <TextView
+                android:id="@+id/tvCategoryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xxxxx"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@id/ctIctLayout"
+                app:layout_constraintStart_toStartOf="@id/ctIctLayout"
+                app:layout_constraintEnd_toEndOf="@id/ctIctLayout"
+
+                app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/v"
+                android:layout_width="1dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="5dp"
+                android:background="@android:color/white"
+                app:layout_constraintEnd_toStartOf="@id/removeCategory"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="37dp"
+                android:layout_height="1dp"
+                app:layout_constraintStart_toEndOf="@id/v"
+                app:layout_constraintBottom_toTopOf="@id/editCategory"
+                app:layout_constraintTop_toBottomOf="@id/removeCategory"
+                android:background="@android:color/white" />
+
+            <ImageView
+                android:id="@+id/removeCategory"
+                android:layout_width="22dp"
+                android:layout_height="29dp"
+                android:layout_margin="10dp"
+                android:paddingBottom="05dp"
+                android:src="@drawable/delete_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+            <ImageView
+                android:id="@+id/editCategory"
+                android:layout_width="22dp"
+                android:layout_height="29dp"
+                android:layout_margin="10dp"
+                android:paddingBottom="05dp"
+                android:src="@drawable/edit_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/removeCategory" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
